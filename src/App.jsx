@@ -43,7 +43,6 @@ const CommentInput = ({ onAddComment, parentId = null }) => {
         value={comment}
         onChange={(e) => setComment(e.target.value)}
         placeholder="Enter the comment"
-        rows="5"
       />
       <button type="submit" disabled={comment.trim().length < 200}>
         Submit
